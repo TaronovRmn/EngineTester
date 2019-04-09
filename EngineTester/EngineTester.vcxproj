@@ -152,6 +152,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EngineTester.cpp" />
+    <ClCompile Include="ICEngine.cpp" />
+    <ClCompile Include="Stand.cpp" />
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ICEngine.h" />
+    <ClInclude Include="IEngines.h" />
+    <ClInclude Include="Stand.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

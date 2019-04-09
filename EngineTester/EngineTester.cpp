@@ -3,24 +3,26 @@
 
 #include <iostream>
 #include <vector>
+#include <chrono>
+#include <ctime>
+#include <shared_mutex>
+#include <thread>
+#include <atomic>
+#include "Timer.h"
+#include "IEngines.h"
+#include "ICEngine.h"
+#include "Stand.h"
 
 using namespace std;
 
-class ICEngine {
-	double i;
-	vector<double> m;
-	vector<double> v;
-	double t_max;
-	double h_m;
-	double h_v;
-	double c;
-public:
-	start
-
-};
-
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	double env_t = 10.0;
+	Stand stand(env_t);
+	IEngines* engine = new ICEngine();
+
+	cout << stand.temperatureTest(engine) << endl;
+	delete engine;
+
 }
 
